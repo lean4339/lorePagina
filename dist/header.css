@@ -11,6 +11,17 @@ body{
     --botones: #cee3fd;
 }
 /*seccion header*/
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 ;
+}
+.institucional{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 header{
     width: 100%;
     display: flex;
@@ -22,10 +33,10 @@ header{
     padding: 10px;
 
 }
-header h2{
+header h3{
     color: white;
     font-weight: bold;
-    padding-left: 10px;
+    font-size: 18px;
 }
 .menu{
     width: 60%;
@@ -45,6 +56,7 @@ header h2{
 }
 .fa-bars{
     padding-right: 10px;
+    font-size: 24px;
 }
 .menuResponsive{
     width: 60%;
@@ -96,18 +108,25 @@ header h2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 30%;
+    width: 60%;
 }
 .contacto a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 @media(min-width: 700px){
     .fa-bars{
         padding-right: 30px;
         font-size: 30px;
+    }
+    .contacto{
+        width: 40%;
+    }
+    header h3{
+        font-size: 24px;
+        justify-self: flex-start;
     }
 }
 @media(min-width: 1024px){
@@ -119,5 +138,8 @@ header h2{
     }
     .fa-bars{
         display: none;
+    }
+    header h3{
+        font-size: 34px;
     }
 }
