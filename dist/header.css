@@ -4,8 +4,8 @@ body{
     box-sizing: border-box;
 }
 :root{
-    --principal: #f3c4d9;
-    --secundario: #ffddf2;
+    --principal: #006ec7;
+    --secundario:#85c7e3 ;
     --terceario: #d9f3c4;
     --cuarto: #f2ffdd;
     --botones: #cee3fd;
@@ -16,14 +16,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--secundario);
+    background-color: var(--principal);
     position: relative;
     z-index: 10;
     padding: 10px;
 
 }
 header h2{
-    color: rgb(63, 59, 59);
+    color: white;
     font-weight: bold;
     padding-left: 10px;
 }
@@ -37,7 +37,7 @@ header h2{
 }
 .menu a{
     text-decoration: none;
-    color: gray;
+    color: white;
     font-weight: bold;
 }
 .menu li{
@@ -55,7 +55,7 @@ header h2{
     width: 100%;
     padding: 10px 0;
     margin: 0;
-    background-color: var(--secundario);
+    background-color: var(--principal);
     visibility: hidden;
     height: 0;
     position: relative;
@@ -67,7 +67,7 @@ header h2{
 }
 .menuResponsive a{
     text-decoration: none;
-    color: gray;
+    color: white;
     font-weight: bold;
 }
 .menuResponsive li{
@@ -90,7 +90,7 @@ header h2{
 .footer h2{
     padding-left: 10px;
     
-    color: rgb(63, 59, 59);
+    color: white;
 }
 .contacto{
     display: flex;
@@ -100,7 +100,7 @@ header h2{
 }
 .contacto a{
     text-decoration: none;
-    color: gray;
+    color: white;
     font-weight: bold;
     font-size: 30px;
 }
