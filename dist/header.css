@@ -20,7 +20,7 @@ body{
 .institucional{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 header{
     width: 100%;
