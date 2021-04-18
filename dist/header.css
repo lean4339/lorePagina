@@ -1,0 +1,123 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --principal: #f3c4d9;
+    --secundario: #ffddf2;
+    --terceario: #d9f3c4;
+    --cuarto: #f2ffdd;
+    --botones: #cee3fd;
+}
+/*seccion header*/
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secundario);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+
+}
+header h2{
+    color: rgb(63, 59, 59);
+    font-weight: bold;
+    padding-left: 10px;
+}
+.menu{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+.menu li{
+    list-style: none;
+}
+.fa-bars{
+    padding-right: 10px;
+}
+.menuResponsive{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    background-color: var(--secundario);
+    visibility: hidden;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+
+
+    
+}
+.menuResponsive a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+.menuResponsive li{
+    list-style: none;
+    padding: 10px;
+}
+.desplegar{
+   
+    height: 200px;
+    visibility: visible;
+    transition: 1s all;
+}
+/*seccion footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--principal);
+}
+.footer h2{
+    padding-left: 10px;
+    
+    color: rgb(63, 59, 59);
+}
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.contacto a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 30px;
+}
+@media(min-width: 700px){
+    .fa-bars{
+        padding-right: 30px;
+        font-size: 30px;
+    }
+}
+@media(min-width: 1024px){
+    .menuResponsive{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .fa-bars{
+        display: none;
+    }
+}

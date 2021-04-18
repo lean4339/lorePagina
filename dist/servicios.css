@@ -1,0 +1,61 @@
+:root{
+    --principal: #f3c4d9;
+    --secundario: #ffddf2;
+    --terceario: #d9f3c4;
+    --cuarto: #f2ffdd;
+    --botones: #cee3fd;
+}
+
+.contenedor{
+    background-color: var(--secundario);
+    padding: 10px 0;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.tarjeta{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px auto;
+}
+.tarjetaimagen{
+    width: 100%;
+    height: 250px;
+    object-position: start;
+    object-fit: cover;
+}
+.preguntar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--secundario);
+
+}
+@media(min-width:700px){
+    .contenedor{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tarjeta{
+        width: 40%;
+    }
+}
+@media(min-width:1024px){
+    .tarjeta{
+        width: 40%;
+    }
+    .tarjetaimagen{
+        object-fit: cover;
+    }
+}
